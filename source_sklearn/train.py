@@ -57,7 +57,7 @@ if __name__ == '__main__':
     
     print("estimators: " + str(args.n_estimators))
     ## Define a model 
-    model = RandomForestClassifier(n_estimators = args.n_estimators, max_depth = 100,criterion = 'entropy')
+    model = RandomForestClassifier(n_estimators = args.n_estimators, max_depth = 100,criterion = 'gini')
     
     
     ## Train the model
